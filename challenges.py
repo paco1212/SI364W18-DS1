@@ -1,3 +1,7 @@
+# Francisco Gallardo
+# SI 364 - Building Interactive Applications 
+# Univesity of Michigan School of Information
+
 from flask import Flask, request
 
 app = Flask(__name__)
@@ -13,7 +17,7 @@ def index():
 # Remember to get rid of the pass statement
 @app.route('/course/<course>')
 def course(course):
-   pass
+   return "<h1>Welcome to {}</h1>".format(course)
 
 # Task 3.1
 # Edit the HTML form such that form data is sent to localhost:5000/result using POST method
